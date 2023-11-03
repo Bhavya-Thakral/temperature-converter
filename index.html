@@ -4,17 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temparture Converter</title>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="conatiner">
-        <h1>Temparture Converter</h1>
-        <h3>Results:</h3>
-        <label for="degree" id="degree"> degree</label>
-        <input type="number" name="degree" id="num" autocomplete="off">
+    <div class="container">
+        <div class="temp-conv">
+            <div class="mobile">
+                <p class="time"> </p>
+                <div>
+                    <i class='bx bx-signal-4'></i>
+                    <i class='bx bx-wifi' ></i>
+                    <i class='bx bxs-battery' ></i>
+                </div>
+            </div>
+            <div class="head">
+                <h1>Temperature Converter</h1>
+            </div>
+            <div class="result">
+                <h3>Results:</h3>
+                <h2 class="celsius-value" id="celius"></h2>
+            </div>
+            <div class="deg-type">
+            <div class="deg">
+                <label for="degree" id="degree"> degree</label>
+                <input type="number" name="degree" id="degree">
+            </div>
+            <div class="type">
+                <label for="temp-type">Type</label>
+                <select name="type" id="type" autocomplete="on">
+                    <option value="Fahrenheit" id="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin" id="Kelvin">Kelvin</option>
+                    <option value="Rankine" id="Rankine">Rankine</option>
+                </select>
+            </div>
 
-        <button type="button" id="btn">Convert</button>
+        </div>
+            <br><br>
+            <button type="button" id="btn">Convert</button>
+        </div>
     </div>
 </body>
 
