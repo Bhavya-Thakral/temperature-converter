@@ -12,6 +12,10 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-image:url(images/pngtree-simple-atmospheric-blue-temperature-needle-illustration-background-image_279280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .mobile{
     display: flex;
