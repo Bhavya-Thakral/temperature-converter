@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: lightblue;
     background: linear-gradient(80deg, rgb(106, 189, 217) 100%);
     font-size: 1rem;
@@ -12,21 +13,22 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image:url(images/pngtree-simple-atmospheric-blue-temperature-needle-illustration-background-image_279280.jpg);
+    background-image: url(images/pngtree-simple-atmospheric-blue-temperature-needle-illustration-background-image_279280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.mobile{
+
+.mobile {
     display: flex;
     justify-content: space-between;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     font-weight: 700;
     font-size: 18px;
     border-bottom: 2px solid black;
 }
 
-.temp-conv{
+.temp-conv {
     background: #fff;
     border-radius: 3%;
     width: 100%;
@@ -40,31 +42,38 @@ body{
 
 
 }
-.head{
+
+.head {
     margin-bottom: 20px;
     text-align: center;
 }
-.result{
+
+.result {
     text-align: center;
     margin: 20px 0px;
 }
-.celsius-value{
+
+.celsius-value {
     border-bottom: 2px solid black;
     padding: 10px;
     transition: all .45s ease;
 }
-.deg-type{
+
+.deg-type {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 }
-label{
+
+label {
     margin-bottom: 5px;
     color: #555;
     font-size: 1.05rem;
 }
-input,select{
+
+input,
+select {
     background: transparent;
     border: none;
     outline: none;
@@ -72,21 +81,25 @@ input,select{
     margin-bottom: 15px;
     padding: 8px;
 }
-input:focus,select:focus{
+
+input:focus,
+select:focus {
     border: 1px solid #4c49f3;
 }
 
-.deg,.type{
+.deg,
+.type {
     display: flex;
     flex-direction: column;
     width: 48%;
 }
-option{
+
+option {
     background-color: rgb(179, 182, 164);
     color: black;
 }
 
-#btn{
+#btn {
     border-radius: 5px;
     border: none;
     outline: none;
@@ -96,8 +109,18 @@ option{
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
 }
-#btn:hover{
-    background: linear-gradient(to bottom,#0a3b1c, #2fda9b);
+
+#btn:hover {
+    background: linear-gradient(to bottom, #0a3b1c, #2fda9b);
+}
+
+.fa {
+    margin-left: -12px;
+    margin-right: 8px;
+}
+
+.loading {
+    display: none;
 }
