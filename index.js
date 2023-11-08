@@ -1,7 +1,7 @@
 // script.js
 const timeChange= document.querySelector("#time");
 const celsiusField = document.querySelector("#celsius");
-const degree = document.querySelector("#degree");
+const degree = document.querySelector("#degree1");
 const convertBtn = document.querySelector("#btn");
 const tempType = document.querySelector("#type");
 
