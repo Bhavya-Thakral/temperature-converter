@@ -6,9 +6,12 @@ const convertBtn = document.querySelector("#btn");
 const tempType = document.querySelector("#type");
 
 window.addEventListener("load", () => {
-    const d = new Date();
-    let text = d.toLocaleTimeString();
-    timeChange.innerHTML= text;
+    setInterval(function(){
+        const d = new Date();
+        let text = d.toLocaleTimeString();
+        timeChange.innerHTML= text;
+    },1000)
+    
   degree.value = "";
   celsiusField.innerHTML = "";
 });
